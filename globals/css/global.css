@@ -6,6 +6,21 @@ body {
   font-family: 'PT Sans', sans-serif;
   margin:0;
 }
+header p {
+  padding:1vw;
+  font-weight: 100;
+  letter-spacing: 0.3vw;
+  margin:0;
+}
+header h1 {
+  margin:0;
+  padding: 3% 0 1%;
+}
+.diamantplate {
+  padding:5% 13%;
+  background-image: url('../img/diamond-plate.png');
+  font-size:3vw;
+}
 
 footer {
   display:grid;

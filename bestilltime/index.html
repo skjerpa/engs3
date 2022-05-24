@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engs bil og Deler As  - Forsiden</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="icon" href="globals/img/logo.svg"/>
+<style>
+@import url('/globals/css/global.css');
+form>*, input, form {
+font-size:1.7vw;
+}
+input[type=checkbox]{
+    width: 2em;
+    font-size: inherit;
+    margin: 0;
+    width: 1rem;
+    margin-right:0.2rem;
+}
+input[type=checkbox].first{
+  margin-left:0;
+}
+
+form .form-columns {
+  display:grid;
+  column-gap: 3vw;
+  row-gap: 1vw;;
+  grid-template-columns: auto auto ;
+}
+form h2 {
+  margin-top: 7%;
+  margin-bottom:0%;
+  padding-bottom:0;
+}
+form .form-columns .fullwidth{
+  grid-column: 1 / 3;
+}
+form .form-columns input {
+  width:100%;
+}
+form .form-columns label {
+  display:block;
+}
+form .form-columns textarea {
+  width:100%;
+  height: 10rem;
+}
+form .checkbox-cluster div {
+  display:inline-block;
+  margin-right:2rem;
+}
+button {
+  color: #fff;
+  display: block;
+  text-align: center;
+  background: #4f6d87;
+  width:30%;
+  margin-top:3vw;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #6182ad;
+  border-radius: 4px;
+  padding: 10px 5px;
+  cursor:pointer;
+}
+button:active, button:link {border: 2px solid #fcfcfc;}
+button:hover {border: 2px solid red;}
+</style>
+</head>
+<body>
+<header>
+  <h1>
+    <a href="/"><img id="logo" src="/globals/logo.svg"></a>
+  </h1>  
+  <p class="gradient">
+    Med 41 års erfaring i ryggen
+  </p>  
+</header>
+<main class="diamantplate">
+  <h1>BESTILL TIME</h1>
+  <form action="." method="get" id="bestilltime">
+    <div class="checkbox-cluster">
+      <h2>Hva skal vi fikse for deg? *</h2>
+      <div><input type="checkbox">EU-kontroll</div>
+      <div><input type="checkbox">Service</div>
+      <div><input type="checkbox"> Dekkskift</div>
+      <div><input type="checkbox"> Bremser</div>
+      <div><input type="checkbox"> Clutch</div>
+      <div><input type="checkbox"> Hjuloppheng</div>
+      <div><input type="checkbox"> Eksosanlegg</div>
+      <div><input type="checkbox"> Air Condition</div>
+      <div><input type="checkbox"> Registerreim</div>
+      <div><input type="checkbox"> El/hybrid</div>
+      <div><input type="checkbox"> Annet</div>
+      <div><input type="checkbox"> Bilskade/Billakkering</div>
+      <div><input type="checkbox"> Bobil-Skade og Lakk</div>
+    </div>
+    <div class="form-columns">
+      <h2  class="fullwidth">Når passer det?</h2>
+      Ønsket dato: <input type="text" name="date-1" value="" size="40" aria-invalid="false" placeholder="05/06/2019" >
+      Alternativ dato: <input type="text" name="date-2" value="" size="40" aria-invalid="false" placeholder="05/06/2019" >
+    </div>
+    <div class="form-columns">
+      <h2 class="fullwidth">
+        Din kontaktinformasjon
+      </h2>
+      <div class="fullwidth"><label>Navn:</label><input type="text"></div>
+      <div><label>Telefon:</label><input type="text"></div>
+      <div><label>E-post: </label><input type="text" placeholder="post@domene.no"></div>
+      <div><label>Registreringsnummer: </label><input type="text"></div>
+      <div><label>KM-stand: </label><input type="text"></div>
+      <div class="fullwidth"><label>Utfyllende informasjon:</label> <textarea></textarea></div>
+    </div>
+    *   Når du sender inn personopplysninger til oss, godtar du samtidig at vi kan samle inn og behandle disse opplysningene i tilknytning forespørselen din. Ønsker du mer informasjon, vennligst se vår personvernerklæring. Se personvernpolicy.
+
+    <button type="submit" form="bestilltime" value="Send forespørsel">Send forespørsel</button> 
+
+  </form>
+
+  
+  
+  
+</main>
+      
+<footer class="no_parallax">
+  <section>
+    Engs Bil og Deler AS<br>
+    Marisagvegen 3<br>
+    2390 MOELV
+  </section>
+  <section>
+    Åpningstider<br>
+    Butikk: 0800-1600<br>
+    Verksted: 0800-1630
+  </section>
+  <section>
+    623 59 400<br>
+    engs@engs.no<br>
+    NO 851 115 862 MVA
+  </section>
+  <section>
+    <a href="https://facebook.com/engsBilogDeler/"><img src="https://engs.no/img/facebook.jpg" title="følg oss på facebook"></a>
+  </section>
+</footer>
+</div> <!-- wrapper for post parallax --> 
+</div> <!-- wrapper for parallax -->
+</body>
+</html>
