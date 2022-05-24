@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engs bil og Deler As  - Forsiden</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="icon" href="globals/img/logo.svg"/>
+<style>
+@import url('/globals/css/global.css');
+#hoved_c2a .background {
+  position:absolute;
+  height:100%;
+  width:100%;
+  object-fit:cover;
+  z-index:-1;
+  transform: translateZ(-5px) scale(2);
+}
+header p {
+  padding:1vw;
+  font-weight: 100;
+  letter-spacing: 0.3vw;
+  margin:0;
+}
+header h1 {
+  margin:0;
+  padding: 3% 0 1%;
+}
+.no_parallax {
+  background-color: var(--rich-black-fogra-39);
+}
+#hoved_c2a {
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:73%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.whitebox {
+  width:20vw;
+  height:6ex;
+  border-style : Solid;
+  border-color : rgba(255, 255, 255, 1);
+  border-width : 1px;
+  margin:2rem;
+  padding:2rem;
+  font-size:3vw;
+  transition:padding 1s, margin 1s ;
+  text-align: center;
+}
+.whitebox:hover, .whitebox:active {
+  transition:padding 1s, margin 1s ;
+  padding:2.5rem;
+  margin:1.5rem;
+}
+.whitebox img {
+  min-width:50px;
+  width:20%;
+}
+.diamantplate {
+  padding:5% 13%;
+  background-image: url('img/diamond-plate.png');
+  font-size:3vw;
+}
+.diamantplate .twoboxes {
+  display:flex;
+  justify-content: center;
+  gap:10%;
+  font-size:80%;
+}
+.diamantplate .twoboxes >* {
+  width: 40%;
+  padding: 5% 5% 25% 5%;
+  list-style: none;
+  background-color:black;
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.diamantplate .twoboxes #dekk {background-image:url('img/dekk.png');}
+.diamantplate .twoboxes #verksted {background-image:url('img/mekking.png');}
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+#sekunda_c2a {
+  padding:5% 7%;
+  background-image:url('img/stormekk.jpeg');
+  background-size: cover;
+}
+#sekunda_c2a .whitebox {
+  display:block;
+  width:80%;
+  border:none;
+  text-shadow: green;
+  font-size:5vw;
+  height:100%;
+}
+#sekunda_c2a .whitebox:hover {
+  text-decoration: none;
+}
+#sekunda_c2a .whitebox .link_hover_ul:hover{
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .diamantplate .twoboxes >* {
+    width: 100%;
+    text-shadow: black 3px 0 0;
+    font-size: 200%;
+    margin:15% 0;
+    padding-left:0;
+  }
+  .diamantplate .twoboxes {
+  display:block;
+  }
+  #hoved_c2a .whitebox{
+    font-size:110%;
+  }
+  .diamantplate {
+  font-size:5vw;
+  }
+
+}
+
+</style>
+</head>
+<body class="page"> 
+<div class="wrapper">
+<div class="no_parallax">
+  <header>
+    <h1>
+      <img id="logo" src="globals/logo.svg">
+    </h1>  
+    <p class="gradient">
+      Med 41 års erfaring i ryggen
+    </p>  
+  </header>
+</div>
+<section id="hoved_c2a">
+  <img src="img/hele.jpg" class="background">
+  <a href="https://vg.no" class="left gradient whitebox ">
+    <img src="img/kalender.svg"><br>
+    Timebestilling
+  </a>
+  <a href="#" class="right gradient whitebox ">
+    <img src="img/phone.svg"><br>
+    Kontakt oss
+  </a>
+</section>
+<div class="no_parallax">
+
+<section class="no_parallax diamantplate">
+  <p>Vi holder til i Moelv hvor vi ble etablert i 1981. 
+  <p>Vi har et bilverksted med topp moderne utstyr, <br>
+    og utfører alle typer verkstedoppdrag <br>
+    på biler opp til 3,5 tonn. <br>
+  <p><a href="#">Les mer om oss....</a>
+  <div class="twoboxes">
+    <ul id="dekk">
+      <li>Dekk og felg </li>
+      <li>Hjulskift</li>
+      <li>Dekkhotel</li>
+    </ul>
+    <ul id="verksted">
+      <li>Merkservice</li>
+      <li>Reperasjoner</li>
+      <li>Også på elbil og bobil</li>
+    </ul>
+  </div>
+</section>
+<section id="sekunda_c2a">
+  <a href="https://vg.no" class="gradient whitebox ">
+    <p>Bli med i vår kundeklubb<br> få våre tilbud først</p>
+    <p class="link_hover_ul">Bli EBD-Partner her... </p>
+
+  </a>
+</section>
+</section>
+<footer class="no_parallax">
+  <section>
+    Engs Bil og Deler AS<br>
+    Marisagvegen 3<br>
+    2390 MOELV
+  </section>
+  <section>
+    Åpningstider<br>
+    Butikk: 0800-1600<br>
+    Verksted: 0800-1630
+  </section>
+  <section>
+    623 59 400<br>
+    engs@engs.no<br>
+    NO 851 115 862 MVA
+  </section>
+  <section>
+    <a href="https://facebook.com/engsBilogDeler/"><img src="https://engs.no/img/facebook.jpg" title="følg oss på facebook"></a>
+  </section>
+</footer>
+</div> <!-- wrapper for post parallax --> 
+</div> <!-- wrapper for parallax -->
+</body>
+</html>

@@ -1,0 +1,10 @@
+@import url('/assets/css/global.css');
+
+body {
+    margin:3vw;
+}
+
+
+img#logo {
+    width:80%;
+}
