@@ -13,11 +13,12 @@ form>*, input, form {
 font-size:1.7vw;
 }
 input[type=checkbox]{
-    width: 2em;
-    font-size: inherit;
+  transform : scale(1.7);    font-size: inherit;
     margin: 0;
-    width: 1rem;
+    width: 1vw;
     margin-right:0.2rem;
+    position:relative;
+    top:-0.2vw;
 }
 input[type=checkbox].first{
   margin-left:0;
@@ -47,9 +48,8 @@ form .form-columns textarea {
   width:100%;
   height: 10rem;
 }
-form .checkbox-cluster div {
-  display:inline-block;
-  margin-right:2rem;
+form label {
+  margin-right:2vw;
 }
 button {
   color: #fff;
@@ -83,25 +83,27 @@ button:hover {border: 2px solid red;}
   <form action="." method="get" id="bestilltime">
     <div class="checkbox-cluster">
       <h2>Hva skal vi fikse for deg? *</h2>
-      <div><input type="checkbox">EU-kontroll</div>
-      <div><input type="checkbox">Service</div>
-      <div><input type="checkbox"> Dekkskift</div>
-      <div><input type="checkbox"> Bremser</div>
-      <div><input type="checkbox"> Clutch</div>
-      <div><input type="checkbox"> Hjuloppheng</div>
-      <div><input type="checkbox"> Eksosanlegg</div>
-      <div><input type="checkbox"> Air Condition</div>
-      <div><input type="checkbox"> Registerreim</div>
-      <div><input type="checkbox"> El/hybrid</div>
-      <div><input type="checkbox"> Annet</div>
-      <div><input type="checkbox"> Bilskade/Billakkering</div>
-      <div><input type="checkbox"> Bobil-Skade og Lakk</div>
+      <input type="checkbox" id="eukontroll">
+        <label for="eukontroll">EU-kontroll</label>
+      <input type="checkbox" id="dekkskift">
+        <label for="dekkskift">Dekkskift</label>
+      <input type="checkbox" id="bremser">
+        <label for="bremser">Bremser</label>
+      <input type="checkbox" id="aircondition">
+        <label for="aircondition">Aircondition</label>
+      <input type="checkbox" id="registerreim">
+        <label for="registerreim">Registerreim</label>
+      <input type="checkbox" id="firehjulskontroll">
+        <label for="firehjulskontroll">Firehjulskontroll</label>
+      <input type="checkbox" id="annet">
+        <label for="annet">Annet</label>
     </div>
     <div class="form-columns">
       <h2  class="fullwidth">Når passer det?</h2>
       Ønsket dato: <input type="text" name="date-1" value="" size="40" aria-invalid="false" placeholder="05/06/2019" >
       Alternativ dato: <input type="text" name="date-2" value="" size="40" aria-invalid="false" placeholder="05/06/2019" >
     </div>
+    <p> I perioder har vi mye å gjøre. Det kan være 1-2 uker ventetid.</p>
     <div class="form-columns">
       <h2 class="fullwidth">
         Din kontaktinformasjon
