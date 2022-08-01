@@ -11,8 +11,8 @@
 @import url('/globals/css/global.css');
 #ansattbilder{
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 1vw;
+  grid-template-columns: 31% 31% 31%;
+  gap: 2.5%;
 }
 #ansattbilder figure {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -34,6 +34,21 @@
   width:100%;
   padding:0;
 }
+@media only screen and (max-width: 600px) {
+  #ansattbilder{
+    display: block;
+    font-size:120%;
+  }
+  #ansattbilder figure {
+    display:grid;
+    grid-template-columns: 30% 65%;
+    margin-bottom:5%;
+  }
+  #ansattbilder figcaption {
+    padding-left:3%;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -49,11 +64,11 @@
   <h1>OM OSS</h1>
   <section id="ansattbilder">
     <figure>
-      <img src="ansattbilder/finn_eng.jpg">
+      <img src="ansattbilder/placeholder.jpg">
       <figcaption>
-        <h1>Finn Eng</h1>
-        <p> Produktansvarlig og eier</p>
-        <p> E-post: finn@engs.no</p>          
+        <h1>Tommy Eng</h1>
+        <p> Daglig leder og eier</p>
+        <p> E-post: tommy@engs.no</p>
       </figcaption>
     </figure>
     <figure>
@@ -61,55 +76,50 @@
       <figcaption>
         <h1>Finn Eng</h1>
         <p> Produktansvarlig og eier</p>
-        <p> E-post: finn@engs.no</p>          
+        <p> E-post: finn@engs.no</p>
       </figcaption>
     </figure>
     <figure>
-      <img src="ansattbilder/finn_eng.jpg">
+      <img src="ansattbilder/placeholder.jpg">
       <figcaption>
-        <h1>Finn Eng</h1>
-        <p> Produktansvarlig og eier</p>
-        <p> E-post: finn@engs.no</p>          
+        <h1>Trine Eng</h1>
+        <p> Administrativ leder og eier</p>
+        <p> E-post: trine@engs.no</p>          
       </figcaption>
     </figure>
     <figure>
-      <img src="ansattbilder/finn_eng.jpg">
+      <img src="ansattbilder/placeholder.jpg">
       <figcaption>
-        <h1>Finn Eng</h1>
-        <p> Produktansvarlig og eier</p>
-        <p> E-post: finn@engs.no</p>          
+        <h1>Richard Rysjedal</h1>
+        <p> Verksmester med fagbrev</p>
+        <p> E-post: verksted@engs.no</p>
       </figcaption>
     </figure>
     <figure>
-      <img src="ansattbilder/finn_eng.jpg">
+      <img src="ansattbilder/placeholder.jpg">
       <figcaption>
-        <h1>Finn Eng</h1>
-        <p> Produktansvarlig og eier</p>
-        <p> E-post: finn@engs.no</p>          
+        <h1>Steinar Sigtbakken</h1>
+        <p> Mekaniker med fagbrev</p>
       </figcaption>
     </figure>
     <figure>
-      <img src="ansattbilder/finn_eng.jpg">
+      <img src="ansattbilder/placeholder.jpg">
       <figcaption>
-        <h1>Finn Eng</h1>
-        <p> Produktansvarlig og eier</p>
-        <p> E-post: finn@engs.no</p>          
+        <h1>Jørgen Danielsberg</h1>
+        <p> Mekaniker med fagbrev</p>
       </figcaption>
     </figure>
     <figure>
-      <img src="ansattbilder/finn_eng.jpg">
+      <img src="ansattbilder/placeholder.jpg">
       <figcaption>
-        <h1>Finn Eng</h1>
-        <p> Produktansvarlig og eier</p>
-        <p> E-post: finn@engs.no</p>          
+        <h1>Kai Morten Antonsen</h1>
+        <p> Bilmekaniker</p>
       </figcaption>
     </figure>
     <figure>
-      <img src="ansattbilder/finn_eng.jpg">
+      <img src="ansattbilder/placeholder.jpg">
       <figcaption>
-        <h1>Finn Eng</h1>
-        <p> Produktansvarlig og eier</p>
-        <p> E-post: finn@engs.no</p>          
+        <h1>Espen Grøndalen</h1>
       </figcaption>
     </figure>
   </section>

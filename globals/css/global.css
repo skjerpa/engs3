@@ -20,6 +20,7 @@ header h1 {
   padding:5% 13%;
   background-image: url('../img/diamond-plate.png');
   font-size:3vw;
+  padding-bottom:10%;
 }
 
 footer {
@@ -27,7 +28,7 @@ footer {
   gap:3vw;
   grid-template-columns: auto auto ;
   margin:5% 13%;
-  font-size:2.5vw;
+  font-size:2vw;
   padding-bottom: 5%;
 }
   
@@ -64,13 +65,12 @@ header {
   footer {
     display:block;
     margin:5% 13%;
-    font-size:5vw;
+    font-size:3vw;
     padding-bottom: 5%;
   }
   footer section {
     padding-bottom:5%;
-  }
-  
+  }  
 } 
 
 .horisontal_gradientv
