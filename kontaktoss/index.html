@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engs bil og Deler As  - Forsiden</title>
+<link rel="icon" href="/globals/logo.svg"/>
+<style>
+@import url('/globals/css/global.css');
+form>*, input, form {
+font-size:1.7vw;
+}
+input[type=checkbox]{
+  transform : scale(1.7);    font-size: inherit;
+    margin: 0;
+    width: 1vw;
+    margin-right:0.2rem;
+    position:relative;
+    top:-0.2vw;
+}
+input[type=checkbox].first{
+  margin-left:0;
+}
+
+form .form-columns {
+  display:grid;
+  column-gap: 3vw;
+  row-gap: 1vw;;
+  grid-template-columns: auto auto ;
+}
+form h2 {
+  margin-top: 7%;
+  margin-bottom:0%;
+  padding-bottom:0;
+}
+form .form-columns .fullwidth{
+  grid-column: 1 / 3;
+}
+form .form-columns input {
+  width:100%;
+}
+form .form-columns label {
+  display:block;
+}
+form .form-columns textarea {
+  width:100%;
+  height: 3rem;
+}
+form label {
+  margin-right:2vw;
+}
+button {
+  color: #fff;
+  display: block;
+  text-align: center;
+  background: #4f6d87;
+  width:30%;
+  margin-top:3vw;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #6182ad;
+  border-radius: 4px;
+  padding: 10px 5px;
+  cursor:pointer;
+}
+button:active, button:link {border: 2px solid #fcfcfc;}
+button:hover {border: 2px solid red;}
+
+::placeholder {
+  color:gray;
+}
+
+
+ 
+
+.map-responsive{
+
+overflow:hidden;
+
+padding-bottom:56.25%;
+
+position:relative;
+
+height:0;
+
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+
+
+</style>
+</head>
+<header>
+  <h1>
+    <a href="/"><img id="logo" src="/globals/logo.svg"></a>
+  </h1>  
+  <p class="gradient">
+    Med 41 års erfaring i ryggen
+  </p>  
+</header>
+<main class="diamantplate">
+  <h1>KONTAKT OSS</h1>
+  <form action="." method="get" id="bestilltime">
+    <div class="checkbox-cluster">
+    <p> Om du vil vi skal ringe deg tilbake kan du fylle </p>
+    <div class="form-columns">
+      <h2 class="fullwidth">
+        Din kontaktinformasjon
+      </h2>
+      <div class="fullwidth"><label>Navn:</label><input type="text"></div>
+      <div><label>Telefon:</label><input type="text"></div>
+      <div><label>E-post: </label><input type="text" placeholder="post@domene.no"></div>
+      <div><label>Registreringsnummer: </label><input type="text"></div>
+      <div><label>KM-stand: </label><input type="text"></div>
+      <div class="fullwidth"><label>Utfyllende informasjon:</label> <textarea></textarea></div>
+    </div>
+    *   Når du sender inn personopplysninger til oss, godtar du samtidig at vi 
+    kan samle inn og behandle disse opplysningene i tilknytning forespørselen din. 
+    Ønsker du mer informasjon, vennligst se vår personvernerklæring. Se personvernpolicy.
+
+    <button type="submit" form="bestilltime" value="Send forespørsel">Send forespørsel</button> 
+
+  </form>
+  <div class="map-responsive">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1939.047195886155!2d10.698211915660467!3d60.92206358934744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466a781ee156f4eb%3A0x37a6b826a04f9510!2sEngs%20Bil%20og%20Deler%20AS!5e0!3m2!1sno!2sno!4v1665435244847!5m2!1sno!2sno" 
+      width="400" height="400" style="border:0;" 
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  
+  
+  
+</main>
+      
+<footer class="no_parallax">
+  <section>
+    Engs Bil og Deler AS<br>
+    Marisagvegen 3<br>
+    2390 MOELV
+  </section>
+  <section>
+    Åpningstider<br>
+    Butikk: 0800-1600<br>
+    Verksted: 0800-1630
+  </section>
+  <section>
+    623 59 400<br>
+    engs@engs.no<br>
+    NO 851 115 862 MVA
+  </section>
+  <section>
+    <a href="https://facebook.com/engsBilogDeler/">
+      <img src="https://engs.no/img/facebook.jpg" title="følg oss på facebook">
+    </a>
+  </section>
+</footer>
+</div> <!-- wrapper for post parallax --> 
+</div> <!-- wrapper for parallax -->
+</body>
+</html>
