@@ -5,8 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Engs bil og Deler As  - Forsiden</title>
-<link rel="stylesheet" type="text/css" href="index.css">
-<link rel="icon" href="globals/img/logo.svg"/>
+<link rel="icon" href="/globals/logo.svg"/>
 <style>
 @import url('/globals/css/global.css');
 form>*, input, form {
@@ -67,9 +66,12 @@ button {
 }
 button:active, button:link {border: 2px solid #fcfcfc;}
 button:hover {border: 2px solid red;}
+
+::placeholder {
+  color:green;
+}
 </style>
 </head>
-<body>
 <header>
   <h1>
     <a href="/"><img id="logo" src="/globals/logo.svg"></a>
@@ -100,8 +102,10 @@ button:hover {border: 2px solid red;}
     </div>
     <div class="form-columns">
       <h2  class="fullwidth">Når passer det?</h2>
-      Ønsket dato: <input type="date" name="date-1" value="" size="40" aria-invalid="false" placeholder="05/06/2019" >
-      Alternativ dato: <input type="date" name="date-2" value="" size="40" aria-invalid="false" placeholder="05/06/2019" >
+      Ønsket dato: 
+      <input type="date" name="date-1" id="date-1" value="" size="40" aria-invalid="false" placeholder="05/06/2019" >
+      Alternativ dato: 
+      <input type="date" name="date-2" id="date-2" value="" size="40" aria-invalid="false" placeholder="05/06/2019" >
     </div>
     <p> I perioder har vi mye å gjøre. Det kan være 1-2 uker ventetid.</p>
     <div class="form-columns">
@@ -115,7 +119,9 @@ button:hover {border: 2px solid red;}
       <div><label>KM-stand: </label><input type="text"></div>
       <div class="fullwidth"><label>Utfyllende informasjon:</label> <textarea></textarea></div>
     </div>
-    *   Når du sender inn personopplysninger til oss, godtar du samtidig at vi kan samle inn og behandle disse opplysningene i tilknytning forespørselen din. Ønsker du mer informasjon, vennligst se vår personvernerklæring. Se personvernpolicy.
+    *   Når du sender inn personopplysninger til oss, godtar du samtidig at vi 
+    kan samle inn og behandle disse opplysningene i tilknytning forespørselen din. 
+    Ønsker du mer informasjon, vennligst se vår personvernerklæring. Se personvernpolicy.
 
     <button type="submit" form="bestilltime" value="Send forespørsel">Send forespørsel</button> 
 
@@ -143,7 +149,9 @@ button:hover {border: 2px solid red;}
     NO 851 115 862 MVA
   </section>
   <section>
-    <a href="https://facebook.com/engsBilogDeler/"><img src="https://engs.no/img/facebook.jpg" title="følg oss på facebook"></a>
+    <a href="https://facebook.com/engsBilogDeler/">
+      <img src="https://engs.no/img/facebook.jpg" title="følg oss på facebook">
+    </a>
   </section>
 </footer>
 </div> <!-- wrapper for post parallax --> 
