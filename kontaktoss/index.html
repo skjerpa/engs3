@@ -67,23 +67,12 @@ button {
 button:active, button:link {border: 2px solid #fcfcfc;}
 button:hover {border: 2px solid red;}
 
-::placeholder {
-  color:gray;
-}
-
-
- 
 
 .map-responsive{
-
-overflow:hidden;
-
-padding-bottom:56.25%;
-
-position:relative;
-
-height:0;
-
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
 }
 
 .map-responsive iframe{
@@ -92,6 +81,24 @@ height:0;
   height:100%;
   width:100%;
   position:absolute;
+}
+
+@media only screen and (max-width: 600px) {
+  form>*, input, form {
+    font-size:20px;
+    margin-bottom:10%;
+  }
+  button {
+    width:100%;
+    margin-bottom: 20%;
+  }
+  form .form-columns {
+    display:block;
+  }
+  quote {
+    font-size:70%;
+  }
+
 }
 
 
@@ -112,9 +119,6 @@ height:0;
     <div class="checkbox-cluster">
     <p> Om du vil vi skal ringe deg tilbake kan du fylle </p>
     <div class="form-columns">
-      <h2 class="fullwidth">
-        Din kontaktinformasjon
-      </h2>
       <div class="fullwidth"><label>Navn:</label><input type="text"></div>
       <div><label>Telefon:</label><input type="text"></div>
       <div><label>E-post: </label><input type="text" placeholder="post@domene.no"></div>
@@ -122,9 +126,11 @@ height:0;
       <div><label>KM-stand: </label><input type="text"></div>
       <div class="fullwidth"><label>Utfyllende informasjon:</label> <textarea></textarea></div>
     </div>
-    *   Når du sender inn personopplysninger til oss, godtar du samtidig at vi 
-    kan samle inn og behandle disse opplysningene i tilknytning forespørselen din. 
-    Ønsker du mer informasjon, vennligst se vår personvernerklæring. Se personvernpolicy.
+    <quote>
+      *   Når du sender inn personopplysninger til oss, godtar du samtidig at vi 
+      kan samle inn og behandle disse opplysningene i tilknytning forespørselen din. 
+      Ønsker du mer informasjon, vennligst se vår personvernerklæring. Se personvernpolicy.
+    </quote>
 
     <button type="submit" form="bestilltime" value="Send forespørsel">Send forespørsel</button> 
 

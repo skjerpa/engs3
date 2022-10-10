@@ -54,6 +54,9 @@ header {
   font-family: 'Montserrat', sans-serif;
 }
 
+::placeholder {
+  color:gray;
+}
 
 @media only screen and (max-width: 600px) {
   img#logo {
@@ -70,7 +73,7 @@ header {
   }
   footer section {
     padding-bottom:5%;
-  }  
+  }
 } 
 
 .horisontal_gradientv
