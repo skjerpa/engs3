@@ -37,7 +37,7 @@
   border-width : 1px;
   margin:2rem;
   padding:2rem;
-  font-size:3vw;
+  font-size:1vw;
   transition:padding 1s, margin 1s ;
   text-align: center;
 }
@@ -83,7 +83,7 @@
   width:80%;
   border:none;
   text-shadow: green;
-  font-size:5vw;
+  font-size:2vw;
   height:100%;
 }
 #sekunda_c2a .whitebox:hover {
@@ -98,6 +98,30 @@ a#omosslink:hover {
   padding:1%;
   margin:-1%;
 }
+
+#verkstedstjenester {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#verkstedstjenester h1 {
+  flex: 0 0 100%;
+}
+#verkstedstjenester img {
+  width:20vw;
+  display:;
+  position:relative;
+  left:-3vw;
+}
+#verkstedstjenester article {
+  padding:1vw 1vw 1vw 3vw;
+  font-size:1.8rem;
+  height:inherit;
+}
+#verkstedstjenester article:hover {
+  transition-duration: 0.5s;
+
 
 @media only screen and (max-width: 600px) {
   .diamantplate .twoboxes >* {
@@ -127,7 +151,7 @@ a#omosslink:hover {
     <h1>
       <img id="logo" src="globals/logo.svg">
     </h1>  
-    <p class="gradient">
+    <p class="gradient ">
       Med 42 års erfaring i ryggen
     </p>  
   </header>
@@ -145,19 +169,47 @@ a#omosslink:hover {
 </section>
 <div class="no_parallax">
 
+<section class="diamantplate" id="verkstedstjenester">
+  <h1>Verkstedstjenester</h1>
+    <article class="whitebox gradient">
+      <a href="#">
+        <img src="img/SVG/4hjul.svg">
+        Firehjulskontroll
+      </a>
+    </article>
+    <article class="whitebox gradient">
+      <a href="#">
+        <img src="img/SVG/Flushing.svg">
+        Flushing
+      </a>
+    </article>
+    <article class="whitebox gradient">
+      <a href="#">
+        <img src="img/SVG/Bilglass.svg">
+        Bilglass
+      </a>
+    </article>
+    <article class="whitebox gradient">
+      <a href="#">
+        <img src="img/SVG/AC.svg">
+        AC-service og rens
+      </a>
+    </article>
+    <article>AC-service og rens.</article>
+    <article>Bilglass</article>
+    <article>Feilsøking</article>
+    <article>Elbil</article>
+    <article>Taxi</article>
+    <article>Minibuss</article>
+    <article>Nøkkeldrop</article>
+</section>
+
 <section class="no_parallax diamantplate">
-  <a href="omoss" style="display:block" id="omosslink">
-    <p>Vi holder til i Moelv hvor vi ble etablert i 1981. 
-    <p>Vårt verksted utfører reparasjon, service 
-      og eu-kontroll på de fleste bilmerker inntill 3500 kg.
-    <p>Les mer om oss....</p>
-  </a>
   <div class="twoboxes">
     <ul id="dekk" style="overflow:hidden;">
       <div style="float:right;width:10vw;">
         <img src="img/continental.png" style="width:100%;">
         <img src="img/nokian.png" style="width:100%;">
-
       </div>
       <li>Dekk og felg </li>
       <li>Hjulskift</li>
@@ -171,9 +223,12 @@ a#omosslink:hover {
   </div>
 </section>
 <section id="sekunda_c2a">
-  <a href="https://vg.no" class="gradient whitebox ">
-    <p>... </p>
-
+  <a href="omoss" class="gradient whitebox ">
+      <p>Vi holder til i Moelv hvor vi ble etablert i 1981. 
+      <p>Vårt verksted utfører reparasjon, service 
+        og eu-kontroll på de fleste bilmerker inntill 3500 kg.
+      <p>Les mer om oss....</p>
+  
   </a>
 </section>
 </section>
