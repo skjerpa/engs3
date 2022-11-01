@@ -68,7 +68,7 @@
 .diamantplate .twoboxes #dekk {background-image:url('img/dekk.png');}
 .diamantplate .twoboxes #verksted {background-image:url('img/mekking.png');}
 .wrapper {
-  height: 100vh;
+  height: 140vh;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
@@ -99,27 +99,30 @@ a#omosslink:hover {
   margin:-1%;
 }
 
-#verkstedstjenester {
+.verkstedtjenester {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
+.verkstedtjenester>article {
+  width:25%;
+  border-style : Solid;
+  border-color : rgba(255, 255, 255, 1);
+  border-width : 0px;
 
-#verkstedstjenester h1 {
-  flex: 0 0 100%;
 }
-#verkstedstjenester img {
-  width:20vw;
+
+.verkstedtjenester img {
+  width:100%;
   display:;
-  position:relative;
+  position:static;
   left:-3vw;
 }
-#verkstedstjenester article {
+.verkstedtjenester article {
   padding:1vw 1vw 1vw 3vw;
   font-size:1.8rem;
-  height:inherit;
 }
-#verkstedstjenester article:hover {
+.verkstedtjenester article:hover {
   transition-duration: 0.5s;
 
 
@@ -156,53 +159,77 @@ a#omosslink:hover {
     </p>  
   </header>
 </div>
-<section id="hoved_c2a">
+<section id="hoved_c2a" class="verkstedtjenester">
   <img src="img/hele.jpg" class="background">
+      <article class="gradient">
+        <a href="bilglass">
+          <img src="img/SVG/Bilglass.svg">
+          Bilglass
+        </a>
+      </article>
+      <article class="gradient">
+          <a href="#">
+          <img src="img/SVG/4hjul.svg">
+          Firehjulskontroll
+        </a>
+      </article>
+      <article class="gradient">
+        <a href="#">
+          <img src="img/SVG/Flushing.svg">
+          Flushing
+        </a>
+      </article>
+      <article class="gradient">
+        <a href="#">
+          <img src="img/SVG/AC.svg">
+          AC-service
+        </a>
+      </article>
+      <article class="gradient">
+        <a href="#">
+          <img src="img/SVG/AC.svg">
+          Dekk og felg
+        </a>
+      </article>
+
+      <article class="gradient">
+        <a href="#">
+          <img src="img/SVG/AC.svg">
+          Elbil
+        </a>
+      </article>
+
+
+      <article class="gradient">
+        <a href="#">
+          <img src="img/SVG/AC.svg">
+          Feilsøking
+        </a>
+      </article>
+
+      <article class="gradient">
+        <a href="#">
+          <img src="img/SVG/AC.svg">
+          Proffkunde
+        </a>
+      </article>
+
+      <article class="gradient">
+        <a href="#">
+          <img src="img/SVG/AC.svg">
+          Nøkkeldrop
+
+        </a>
+      </article>
+    </section>
 <!--  <a href="bestilltime" class="left gradient whitebox ">
     <img src="img/kalender.svg"><br>
     Timebestilling
   </a>-->
-  <a href="kontaktoss" class="right gradient whitebox ">
-    <img src="img/phone.svg"><br>
-    Kontakt oss
-  </a>
 </section>
 <div class="no_parallax">
 
-<section class="diamantplate" id="verkstedstjenester">
-  <h1>Verkstedstjenester</h1>
-    <article class="whitebox gradient">
-      <a href="#">
-        <img src="img/SVG/4hjul.svg">
-        Firehjulskontroll
-      </a>
-    </article>
-    <article class="whitebox gradient">
-      <a href="#">
-        <img src="img/SVG/Flushing.svg">
-        Flushing
-      </a>
-    </article>
-    <article class="whitebox gradient">
-      <a href="#">
-        <img src="img/SVG/Bilglass.svg">
-        Bilglass
-      </a>
-    </article>
-    <article class="whitebox gradient">
-      <a href="#">
-        <img src="img/SVG/AC.svg">
-        AC-service og rens
-      </a>
-    </article>
-    <article>AC-service og rens.</article>
-    <article>Bilglass</article>
-    <article>Feilsøking</article>
-    <article>Elbil</article>
-    <article>Taxi</article>
-    <article>Minibuss</article>
-    <article>Nøkkeldrop</article>
-</section>
+
 
 <section class="no_parallax diamantplate">
   <div class="twoboxes">
@@ -223,6 +250,11 @@ a#omosslink:hover {
   </div>
 </section>
 <section id="sekunda_c2a">
+  <a href="kontaktoss" class="right gradient whitebox ">
+    <img src="img/phone.svg"><br>
+    Kontakt oss
+  </a>
+
   <a href="omoss" class="gradient whitebox ">
       <p>Vi holder til i Moelv hvor vi ble etablert i 1981. 
       <p>Vårt verksted utfører reparasjon, service 
