@@ -90,13 +90,7 @@ header {
 
 .gradient
 {
-  background : -moz-linear-gradient(50% 0% -90deg,rgba(77, 77, 77, 1) 11.07%,rgba(0, 0, 0, 0.9) 99.71%);
-  background : -webkit-linear-gradient(-90deg, rgba(77, 77, 77, 1) 11.07%, rgba(0, 0, 0, 0.9) 99.71%);
-  background : -webkit-gradient(linear,50% 0% ,50% 100% ,color-stop(0.1107,rgba(77, 77, 77, 1) ),color-stop(0.9971,rgba(0, 0, 0, 0.9) ));
-  background : -o-linear-gradient(-90deg, rgba(77, 77, 77, 1) 11.07%, rgba(0, 0, 0, 0.9) 99.71%);
-  background : -ms-linear-gradient(-90deg, rgba(77, 77, 77, 1) 11.07%, rgba(0, 0, 0, 0.9) 99.71%);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4D4D4D', endColorstr='#000000' ,GradientType=0)";
-  background : linear-gradient(180deg, rgba(77, 77, 77, 1) 11.07%, rgba(0, 0, 0, 0.9) 99.71%);
+  background : linear-gradient(180deg, rgba(60, 60, 60, 1) 11.07%, rgba(20, 20, 20, 0.9) 99.71%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4D4D4D',endColorstr='#000000' , GradientType=0);
 }
 
@@ -120,7 +114,7 @@ a:hover, a:active, a:active, a:focus {
 
 /* CSS HEX */
 --up-maroon: #7c0c0cff;
---rich-black-fogra-39: #080f0eff;
+--rich-black-fogra-39: rgb(5, 8, 8);
 --maya-blue: #84c7f9ff;
 --xanadu: #6f8278ff;
 --gunmetal: #25323dff;
