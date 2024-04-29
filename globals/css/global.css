@@ -22,6 +22,26 @@ header h1 {
   font-size:3vw;
   padding-bottom:10%;
 }
+main {
+  max-width: 900px;
+}
+
+header menu {
+  color:whitesmoke;
+  text-decoration: none;
+  text-transform: none;
+  position:absolute;
+  top:0.3rem;
+  right:1rem;
+  font-size:60%;
+}
+header menu li{
+  list-style: none;
+  display:inline;
+  padding-left:2rem;
+  padding-right:1rem;
+}
+
 
 footer {
   display:grid;

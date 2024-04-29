@@ -11,10 +11,10 @@
 @import url('/globals/css/global.css');
 
 #nyttbygg {
-  height:50 vh;
+  height:30vh;
   padding:35vh ;
   text-align: center;
-  background-image: url('img/nytthus.jpg');
+  background-image: url('/EngsBilogDeler_full_fasade.jpg');
   background-size:cover;
   background-position: center;'
 }
@@ -118,8 +118,17 @@ a#omosslink:hover {
 }
 .verkstedtjenester article:hover {
   transition-duration: 0.5s;
+}
+
+
 
 @media only screen and (max-width: 600px) {
+  #nyttbygg {
+  height:35vh;
+  padding:5vh 0 ;
+  border:solid 1px green;
+  }
+
   .diamantplate .twoboxes >* {
     width: 100%;
     text-shadow: black 3px 0 0;
@@ -136,18 +145,26 @@ a#omosslink:hover {
   .diamantplate {
   font-size:5vw;
   }
+  #sekunda_c2a .whitebox {
+  font-size:5vw;
+
 }
 
 </style>
+
 </head>
 <body class="page"> 
   <header>
     <h1>
-      <img id="logo" src="globals/logo.svg">
+      <a href="/"><img id="logo" src="/globals/logo.svg"></a>
     </h1>  
     <p class="gradient ">
       Med 43 års erfaring i ryggen
     </p>  
+    <menu>
+      <li><a href="/">Forsiden</a></li>
+      <li><a href="/omoss">Om oss</a></li>
+    </menu>
   </header>
 </div>
 <!--
@@ -221,7 +238,7 @@ a#omosslink:hover {
 </section>-->
 
 <section id="nyttbygg">
-  <h1>Vi har bygget nytt dekkverksted</h1>
+  <h1><a href="omoss">Vi har bygget nytt dekkverksted</a></h1>
 </section>
 
 
@@ -246,10 +263,13 @@ a#omosslink:hover {
   </div>
 </section>
 <section id="sekunda_c2a">
+<!--
+
   <a href="kontaktoss" class="right gradient whitebox ">
     <img src="img/phone.svg"><br>
     Kontakt oss
   </a>
+  -->
 
   <a href="omoss" class="gradient whitebox ">
       <p>Vi holder til i Moelv hvor vi ble etablert i 1981. 
@@ -268,12 +288,12 @@ a#omosslink:hover {
   </section>
   <section>
     Åpningstider<br>
-    Butikk: 0800-1600<br>
-    Verksted: 0800-1630
+    Butikk: 0800-1630<br>
+    Verksted: 0800-1600
   </section>
   <section>
     623 59 400<br>
-    engs@engs.no<br>
+    <a href="mailto:engs@engs.no">engs@engs.no</a><br>
     NO 851 115 862 MVA
   </section>
   <section>
