@@ -9,25 +9,19 @@
 <link rel="icon" href="globals/img/logo.svg"/>
 <style>
 @import url('/globals/css/global.css');
-#hoved_c2a .background {
-  position:absolute;
-  height:100%;
-  width:100%;
-  object-fit:cover;
-  z-index:-1;
-  transform: translateZ(-5px) scale(2);
+
+#nyttbygg {
+  height:50 vh;
+  padding:35vh ;
+  text-align: center;
+  background-image: url('img/nytthus.jpg');
+  background-size:cover;
+  background-position: center;'
 }
-.no_parallax {
-  background-color: var(--rich-black-fogra-39);
-}
-#hoved_c2a {
-  position:relative;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height:73%;
-  transform-style: preserve-3d;
-  z-index: -1;
+#nyttbygg h1 {
+  background-color:red;
+  padding:3vh;
+  margin-left:1f0vh;
 }
 .whitebox {
   width:20vw;
@@ -125,7 +119,6 @@ a#omosslink:hover {
 .verkstedtjenester article:hover {
   transition-duration: 0.5s;
 
-
 @media only screen and (max-width: 600px) {
   .diamantplate .twoboxes >* {
     width: 100%;
@@ -148,8 +141,6 @@ a#omosslink:hover {
 </style>
 </head>
 <body class="page"> 
-<div class="wrapper">
-<div class="no_parallax">
   <header>
     <h1>
       <img id="logo" src="globals/logo.svg">
@@ -159,6 +150,7 @@ a#omosslink:hover {
     </p>  
   </header>
 </div>
+<!--
 <section id="hoved_c2a" class="verkstedtjenester">
   <img src="img/hele.jpg" class="background">
       <article class="gradient">
@@ -222,12 +214,16 @@ a#omosslink:hover {
         </a>
       </article>
     </section>
-<!--  <a href="bestilltime" class="left gradient whitebox ">
+  <a href="bestilltime" class="left gradient whitebox ">
     <img src="img/kalender.svg"><br>
     Timebestilling
-  </a>-->
+  </a>
+</section>-->
+
+<section id="nyttbygg">
+  <h1>Vi har bygget nytt dekkverksted</h1>
 </section>
-<div class="no_parallax">
+
 
 
 
@@ -284,7 +280,5 @@ a#omosslink:hover {
     <a href="https://facebook.com/engsBilogDeler/"><img src="https://engs.no/img/facebook.jpg" title="følg oss på facebook"></a>
   </section>
 </footer>
-</div> <!-- wrapper for post parallax --> 
-</div> <!-- wrapper for parallax -->
 </body>
 </html>
